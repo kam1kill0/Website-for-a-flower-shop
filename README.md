@@ -1,2 +1,2 @@
-# Website-for-a-flower-shop
+# flower shop website
 Курсовой проект, Галимова Камиля, 231-332
