@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowglow</title>
+
+    <link rel="shortcut icon" href="./image/favicon.svg"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header> 
+    <a href="main.html">
+      <img src="./image/лого.svg" alt="Logo" class="logo" /> 
+    </a> 
+      <nav> 
+        <ul class="navbar"> 
+          <li><a href="catalog.html">Каталог</a></li> 
+          <li><a href="#">Адреса магазинов</a></li> 
+          <li><a href="#">Контакты</a></li> 
+        </ul> 
+      </nav> 
+      <div class="header__icons"> 
+        <div class="header__icons-list"> 
+          <img src="./image/map-pin.svg" alt="pin" />
+          <p>Москва</p>
+          <img src="./image/arrow.svg" alt="arrow" />
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <img src="./image/shopping-cart-simple.svg" alt="cart" />
+          <span id="cart-counter" class="cart-counter">0</span>
+        </a>
+        <img src="./image/user.svg" alt="user" />
+     </div>  
+  </header>
+
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="text-content">
+            <h1>Порадуйте родных и любимых!</h1>
+            <p>Доставим букет за 40 минут</p>
+            <button class="main--btn">
+              <a href="catalog.html">Выбрать букет</a>
+            </button> 
+          </div>
+          <div class="image-content">
+            <img src="./image/букет.png" alt="Букет цветов">
+            <div class="image-content-background">
+              <img src="./image/background.png" alt="Задний фон">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="card__container">
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="popular.html">Популярные букеты</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/1.png" alt=""> 
+          </div>
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="#">Монобукеты</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/2.png" alt=""> 
+          </div>
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="#">Цветы в коробке</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/3.png" alt=""> 
+          </div>
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="#">Авторские букеты</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/4.png" alt=""> 
+          </div>
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="#">Полевые цветы</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/5.png" alt=""> 
+          </div>
+          <div class="card"> 
+            <div class="card__title"> 
+              <h3><a href="#">Подарки</a></h3> 
+              <img src="./image/arrow-right.svg" alt=""> 
+            </div> 
+            <img src="./image/6.png" alt=""> 
+          </div>
+        </div>
+        <button class="catalog--btn">
+          <a href="catalog.html">Смотреть весь каталог</a>
+        </button>      
+      </section>
+
+      <section class="reviews">
+        <div class="reviews--header">
+          <h2>Последние отзывы о магазинах в Москве</h2>
+          <div class="rating">
+            <div class="rating--score">
+              <img src="./image/icon-star.svg" alt="star">
+              <p>4.8</p>
+            </div>
+            <p>10 456 отзывов</p>
+          </div>
+        </div>
+        <div class="review--card--container">
+          <div class="review--card">
+            <img src="./image/avatar1.png" alt="avatar">
+            <div class="review--body">
+              <div class="review--card--title">
+                <div class="author--score">
+                  <h4>Юлия</h4>
+                  <div class="stars">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                  </div>               
+                </div>
+                <p>май 2024</p>
+              </div>
+              <p>Все отлично! Заказываю цветы не первый раз. Цветы всегда свежие, 
+                стоят долго. Буду заказывать еще! Спасибо!</p>
+            </div>
+          </div>
+          <div class="review--card">
+            <img src="./image/avatar2.png" alt="avatar">
+            <div class="review--body">
+              <div class="review--card--title">
+                <div class="author--score">
+                  <h4>Екатерина</h4>
+                  <div class="stars">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                  </div>               
+                </div>
+                <p>май 2024</p>
+              </div>
+              <p>Идеальный букет! Спасибо!</p>
+            </div>
+          </div>
+          <div class="review--card">
+            <img src="./image/avatar3.png" alt="avatar">
+            <div class="review--body">
+              <div class="review--card--title">
+                <div class="author--score">
+                  <h4>Анна</h4>
+                  <div class="stars">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                    <img src="./image/icon-star.svg" alt="star">
+                  </div>               
+                </div>
+                <p>май 2024</p>
+              </div>
+              <p>Свежий, красивый букет! Быстрая доставка. Все супер!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer--container">
+        <div class="footer--logo">
+          <a href="main.html">
+            <img src="./image/лого.svg" alt="Logo" class="logo" /> 
+          </a> 
+          <div class="social-media">
+            <img src="./image/vk.svg" alt="VK">
+            <img src="./image/telegram.svg" alt="Telegram">
+          </div>
+        </div>
+        <div class="footer--section">
+          <p>Полезные ссылки</p>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer--section">
+          <p>Популярные города</p>
+          <ul>
+            <li><a href="#">Москва</a></li>
+            <li><a href="#">Санкт-Петербург</a></li>
+            <li><a href="#">Екатеринбург</a></li>
+            <li><a href="#">Казань</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

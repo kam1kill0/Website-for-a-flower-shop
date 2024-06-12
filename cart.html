@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+
+    <link rel="shortcut icon" href="./image/favicon.svg"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header> 
+        <a href="main.html">
+          <img src="./image/лого.svg" alt="Logo" class="logo" /> 
+        </a> 
+          <nav> 
+            <ul class="navbar"> 
+              <li><a href="catalog.html">Каталог</a></li> 
+              <li><a href="#">Адреса магазинов</a></li> 
+              <li><a href="#">Контакты</a></li> 
+            </ul> 
+          </nav> 
+          <div class="header__icons"> 
+            <div class="header__icons-list"> 
+              <img src="./image/map-pin.svg" alt="pin" />
+              <p>Москва</p>
+              <img src="./image/arrow.svg" alt="arrow" />
+            </div>
+            <a href="cart.html" class="cart-icon">
+              <img src="./image/shopping-cart-simple.svg" alt="cart" />
+              <span id="cart-counter" class="cart-counter">1    </span>
+            </a>
+            <img src="./image/user.svg" alt="user" />
+         </div>  
+    </header>
+
+    <main>
+        <section class="cart">
+            <ul class="breadcrumbs">
+                <li><a href="main.html">Каталог</a></li>
+                <li>Корзина</li>
+            </ul>
+            <h2>Корзина</h2>
+            <div class="cart-container">
+                <div class="cart-item">
+                    <img src="./image/b2.png" alt="Букет 'В ожидании весны'">
+                    <div class="cart-item-details">
+                        <div class="item-header">
+                            <div class="item-name">
+                                <p>35×40см</p>
+                                <h3>Букет «В ожидании весны»</h3>
+                            </div>
+                            <button class="remove-btn">
+                                <img src="./image/trash-24.svg" alt="Удалить">
+                            </button>
+                        </div>
+                        <div class="item-price">
+                            <div class="item-quantity">
+                                <button class="quantity-btn">
+                                    <img src="./image/minus.svg">
+                                </button>
+                                <span>1</span>
+                                <button class="quantity-btn">
+                                    <img src="./image/plus.svg">
+                                </button>
+                            </div>
+                            <p>2 990 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Ваш заказ</h3>
+                    <div class="order-info">
+                        <p>Стоимость товаров(1):</p>
+                        <p>2 990 ₽</p>
+                    </div>
+                    <div class="order-info">
+                        <p>Доставка:</p>
+                        <p>Бесплатно</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="total">
+                        <h4>Итого:</h4>
+                        <h4>2 990 ₽</h4>
+                    </div>
+                    <button class="order-btn">Оформить заказ</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer--container">
+          <div class="footer--logo">
+            <a href="main.html">
+                <img src="./image/лого.svg" alt="Logo" class="logo" /> 
+            </a> 
+            <div class="social-media">
+              <img src="./image/vk.svg" alt="VK">
+              <img src="./image/telegram.svg" alt="Telegram">
+            </div>
+          </div>
+          <div class="footer--section">
+            <p>Полезные ссылки</p>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка</a></li>
+            </ul>
+          </div>
+          <div class="footer--section">
+            <p>Популярные города</p>
+            <ul>
+              <li><a href="#">Москва</a></li>
+              <li><a href="#">Санкт-Петербург</a></li>
+              <li><a href="#">Екатеринбург</a></li>
+              <li><a href="#">Казань</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
